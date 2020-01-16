@@ -1,0 +1,27 @@
+body {
+  background-image: url(https://wallpapercave.com/wp/jo9mmpH.jpg);
+}
+
+h1{
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+}
+
+ol{
+  font-weight: bold;
+  font-size: 30px;
+  text-align: left;
+  top: 150px;
+  position: absolute;
+  color: white;
+}
+
+h3{
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+  top: 500px;
+  position: relative;
+  color: white;
+}
