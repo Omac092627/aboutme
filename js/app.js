@@ -11,7 +11,7 @@ if (takeQuiz.toLowerCase() === 'yes') {
   alert('Aw yeah, lets do this!');
 
 } else if ('no') {
-  alert('Go back and study!');
+  alert('You freaking suck dude');
   end;
 
 } else {
