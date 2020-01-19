@@ -1,4 +1,5 @@
 'use strict';
+var score = 0;
 
 var welcomeMessage = prompt('Sup dude, what is your name?');
 alert('Welcome ' + welcomeMessage);
@@ -25,6 +26,7 @@ var firstQuestion = prompt('Is my name Lami Beach?');
 
 if (firstQuestion.toLowerCase() === 'yes') {
   alert('Great job ' + welcomeMessage + ' That is my name!');
+  alert(score++);
   //console.log('Great job ' + welcomeMessage + ' That is my name!')
 } else if ('no') {
   alert('Aww shucks, you don/t love me');
@@ -35,10 +37,11 @@ if (firstQuestion.toLowerCase() === 'yes') {
 }
 
 
-var secondQuestion = prompt('Did I attend Arizona State University')
+var secondQuestion = prompt('Did I attend Arizona State University');
 
 if (secondQuestion.toLowerCase() === 'yes') {
   alert('You are on a roll!');
+  alert(score++)
   //console.log('You are on a roll')
 
 } else if ('no') {
@@ -58,6 +61,7 @@ if (thirdQuestion.toLowerCase() === 'yes') {
 
 } else if ('no') {
   alert('Correcto Mundo!');
+  alert(score++);
   //console.log('Correcto Mundo!')
 
 } else {
@@ -73,6 +77,7 @@ if (fourthQuestion.toLowerCase() === 'yes') {
 
 } else if ('no') {
   alert('That is correct!');
+  alert(score++);
   //console.log('That is correct')
 
 } else {
@@ -80,10 +85,11 @@ if (fourthQuestion.toLowerCase() === 'yes') {
 }
 
 
-var fifthQuestion = prompt('Do I like to party?')
+var fifthQuestion = prompt('Do I like to party?');
 
 if (fifthQuestion.toLowerCase() === 'yes') {
   alert('Yes, ' + welcomeMessage + ' lets party!')
+  alert(score++)
   //console.log('Yes, ' + welcomeMessage + ' lets party!')
 
 } else if ('no') {
@@ -93,3 +99,65 @@ if (fifthQuestion.toLowerCase() === 'yes') {
 } else {
   alert('Something went wrong')
 }
+
+
+//console.log('sixthQuestion' + 'Guess a number between 1 and 10!');
+
+for (var i = 0; i < 4; i++) {
+
+  var sixthQuestion = prompt('Guess a number between 1 and 10!');
+  var int = 9;
+
+  if (sixthQuestion == 9) {
+    alert('Good job, you read my mind! ' + welcomeMessage);
+    alert(score++)
+    break;
+  }
+
+  else if (sixthQuestion < 9) {
+    alert('higher')
+  }
+
+  else if (sixthQuestion > 9) {
+    alert('lower');
+
+  }
+
+}
+
+if (sixthQuestion != 9) {
+  alert('The answer is 9!');
+}
+
+for (var a = 0; a < 6; a++) {
+
+  var seventhQuestion = prompt('What is your favorite color?');
+  var colors = ['red', 'blue', 'green', 'purple'];
+
+  if (seventhQuestion === colors[0]) {
+    alert('Yes, that is my favorite');
+    alert(score++)
+    break;
+
+  } else if (seventhQuestion === colors[1]) {
+    alert('Yes, I love the color blue');
+    alert(score++)
+    break;
+
+  } else if (seventhQuestion === colors[2]) {
+    alert('Oh yeah, green is the best');
+    alert(score++)
+    break;
+
+  } else if (seventhQuestion === colors[3]) {
+    alert('Purple rhymes with Urkle, you are correct');
+    alert(score++);
+    break;
+  }
+
+  else (seventhQuestion != colors)
+  alert('Try again');
+}
+
+alert('The correct answers were: ' + colors);
+alert(score);
