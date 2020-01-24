@@ -1,191 +1,198 @@
 'use strict';
 
 var scoreNumber = 1;
+var message1 = prompt('Sup dude, what is your name?');
 
 
 
-var welcomeMessage = prompt('Sup dude, what is your name?');
-alert('Welcome ' + welcomeMessage);
+function welcomeMessage() {
+  alert('Welcome ' + message1);
+}
+welcomeMessage();
 console.log('Welcome');
 
 
 
-var takeQuiz = prompt('Are you ready for the quiz?');
+var ready = prompt('Are you ready for the quiz?');
+//above is global variable, that way if the user isn't ready, the code stops//
 
-if (takeQuiz.toLowerCase() === 'yes') {
-  alert('lets do this');
-  console.log('Ready!');
-
-
-} else if (takeQuiz.toLowerCase() === 'no') {
-  alert('Study!');
-  console.log('They not ready');
+function takeQuiz() {
 
 
-} else {
-  alert('Something went wrong');
-  console.log('something went wrong');
-
+  if (ready.toLowerCase() === 'yes') {
+    alert('Lets do this');
+    console.log('they ready');
+  } else if (ready.toLowerCase() === 'no') {
+    alert('Go back and study');
+    console.log('they not ready');
+  } else {
+    alert('something went wrong');
+  }
 }
+takeQuiz();
+console.log('Ready or nah?')
 
 
+while ((ready === 'yes') || (ready != 'no')) {
 
-while (takeQuiz.toLowerCase() === 'yes') {
-  console.log('My code only runs when the person is ready');
+  function firstQuestion() {
+    var firstQ = prompt('Is my name Lami Beach?');
 
-  var firstQuestion = prompt('Is my name Lami Beach?');
-
-  if (firstQuestion.toLowerCase() === 'yes') {
-    alert('Great job ' + welcomeMessage + ' That is my name!');
-    alert(scoreNumber++);
-    console.log('Great job ' + welcomeMessage + ' That is my name!');
-  } else if ('no') {
-    alert('Aww shucks, you don/t love me');
-    console.log('wrong answer');
-
-  } else {
-    alert('Something went wrong')
-    console.log('Something went wrong');
-
-  }
-
-
-  var secondQuestion = prompt('Did I attend Arizona State University');
-
-  if (secondQuestion.toLowerCase() === 'yes') {
-    alert('You are on a roll!');
-    alert(scoreNumber++);
-    console.log('You are on a roll');
-
-  } else if ('no') {
-    alert('Yikes, I thought you were my friend!');
-    console.log('Yikes, I thought you were my friend!');
-
-  } else {
-    alert('Something went wrong');
-    console.log('Something went wrong');
-
-  }
-
-
-  var thirdQuestion = prompt('Was I an exotic Dancer?');
-
-  if (thirdQuestion.toLowerCase() === 'yes') {
-    alert('I wish!');
-    console.log('I wish!');
-
-  } else if ('no') {
-    alert('Correcto Mundo!');
-    alert(scoreNumber++);
-    console.log('Correcto Mundo!');
-
-  } else {
-    alert('Something went wrong');
-    console.log('Something went wrong');
-  }
-
-
-  var fourthQuestion = prompt('Have I sold a screenplay yet?');
-
-  if (fourthQuestion.toLowerCase() === 'yes') {
-    alert('Unfortunately I have not');
-    console.log('Unfortunately I have not');
-
-  } else if ('no') {
-    alert('That is correct!');
-    alert(scoreNumber++);
-    console.log('That is correct');
-
-  } else {
-    alert('Something went wrong');
-    console.log('Something went wrong');
-
-  }
-
-
-  var fifthQuestion = prompt('Do I like to party?');
-
-  if (fifthQuestion.toLowerCase() === 'yes') {
-    alert('Yes, ' + welcomeMessage + ' lets party!')
-    alert(scoreNumber++);
-    console.log('Yes, ' + welcomeMessage + ' lets party!');
-
-  } else if ('no') {
-    alert('Sorry that is wrong')
-    console.log('Sorry that is wrong');
-
-  } else {
-    alert('Something went wrong')
-    console.log('Something went wrong');
-
-  }
-
-
-
-  for (var i = 0; i < 4; i++) {
-
-    var sixthQuestion = prompt('Guess a number between 1 and 10!');
-    var int = 9;
-
-    if (sixthQuestion == 9) {
-      alert('Good job, you read my mind! ' + welcomeMessage);
+    if (firstQ.toLowerCase() === 'yes') {
+      alert('Great job ' + message1 + ' That is my name!');
       alert(scoreNumber++);
-      console.log('good job');
-      break;
+      console.log('Great job ' + message1 + ' That is my name!');
+    } else if ('no') {
+      alert('Aww shucks, you don/t love me');
+      console.log('wrong answer');
+    } else {
+      alert('Something went wrong')
+      console.log('Something went wrong');
     }
-
-    else if (sixthQuestion < 9) {
-      alert('higher')
-      console.log('higher');
-    }
-
-    else if (sixthQuestion > 9) {
-      alert('lower');
-      console.log('lower');
-    }
-
   }
 
-  if (sixthQuestion != 9) {
-    alert('The answer is 9!');
-  }
+  firstQuestion();
+  console.log('firstQuestion called');
 
-  for (var a = 0; a < 6; a++) {
 
-    var seventhQuestion = prompt('What is your favorite color?');
-    var colors = ['red', 'blue', 'green', 'purple'];
+  function secondQuestion() {
+    var secondQ = prompt('Did I attend Arizona State University');
 
-    if (seventhQuestion === colors[0]) {
-      alert('Yes, that is my favorite');
+    if (secondQ.toLowerCase() === 'yes') {
+      alert('You are on a roll!');
       alert(scoreNumber++);
-      console.log('correct answer');
-      break;
-
-    } else if (seventhQuestion === colors[1]) {
-      alert('Yes, I love the color blue');
-      alert(scoreNumber++);
-      console.log('correct answer');
-      break;
-
-    } else if (seventhQuestion === colors[2]) {
-      alert('Oh yeah, green is the best');
-      alert(scoreNumber++);
-      console.log('correct answer');
-      break;
-
-    } else if (seventhQuestion === colors[3]) {
-      alert('Purple rhymes with Urkle, you are correct');
-      alert(scoreNumber++);
-      console.log('correct answer');
-      break;
+      console.log('You are on a roll');
+    } else if ('no') {
+      alert('Yikes, I thought you were my friend!');
+      console.log('Yikes, I thought you were my friend!');
+    } else {
+      alert('Something went wrong');
+      console.log('Something went wrong');
     }
-
-    else (seventhQuestion != colors)
-    alert('Try again');
-    console.log('Try again');
   }
 
+  secondQuestion();
+  console.log('second question called');
 
+
+
+  function thirdQuestion() {
+    var thirdQ = prompt('Was I an exotic Dancer?');
+
+    if (thirdQ.toLowerCase() === 'yes') {
+      alert('I wish!');
+      console.log('I wish!');
+    } else if ('no') {
+      alert('Correcto Mundo!');
+      alert(scoreNumber++);
+      console.log('Correcto Mundo!');
+    } else {
+      alert('Something went wrong');
+      console.log('Something went wrong');
+    }
+  }
+
+  thirdQuestion();
+  console.log('third question called');
+
+
+
+  function fourthQuestion() {
+    var fourthQ = prompt('Have I sold a screenplay yet?');
+
+    if (fourthQ.toLowerCase() === 'yes') {
+      alert('Unfortunately I have not');
+      console.log('Unfortunately I have not');
+    } else if ('no') {
+      alert('That is correct!');
+      alert(scoreNumber++);
+      console.log('That is correct');
+    } else {
+      alert('Something went wrong');
+      console.log('Something went wrong');
+
+    }
+  }
+
+  fourthQuestion();
+  console.log('fourth question called');
+
+
+  function fifthQuestion() {
+    var fifthQ = prompt('Do I like to party?');
+
+    if (fifthQ.toLowerCase() === 'yes') {
+      alert('Yes, ' + message1 + ' lets party!')
+      alert(scoreNumber++);
+      console.log('Yes, ' + message1 + ' lets party!');
+    } else if ('no') {
+      alert('Sorry that is wrong')
+      console.log('Sorry that is wrong');
+    } else {
+      alert('Something went wrong')
+      console.log('Something went wrong');
+
+    }
+  }
+
+  fifthQuestion();
+  console.log('fifth question called');
+
+
+
+  function sixthQuestion() {
+
+    for (var i = 0; i < 4; i++) {
+
+      var sixthQ = prompt('Guess a number between 1 and 10!');
+      var int = 9;
+
+      if (sixthQ == 9) {
+        alert('Good job, you read my mind! ' + message1);
+        alert(scoreNumber++);
+        console.log('good job');
+        break;
+      }
+      else if (sixthQ < 9) {
+        alert('higher')
+        console.log('higher');
+      }
+      else if (sixthQ > 9) {
+        alert('lower');
+        console.log('lower');
+      }
+    }
+    if (sixthQ != 9) {
+      alert('The answer is 9!');
+    }
+  }
+
+  sixthQuestion();
+  console.log('sixth question called');
+
+
+
+  function seventhQuestion() {
+
+    for (var a = 0; a < 6; a++) {
+
+      var seventhQ = prompt('What is your favorite color?');
+      var colors = ['red', 'blue', 'green', 'purple'];
+
+      if (seventhQ.toLowerCase() === colors[0] || seventhQ.toLowerCase() === colors[1] || seventhQ.toLowerCase() === colors[2] || seventhQ.toLowerCase() === colors[3]) {
+        alert('Yes, that is my favorite');
+        alert(scoreNumber++);
+        console.log('correct answer');
+        break;
+      }
+      else (seventhQ.toLowerCase() != colors)
+      alert('Try again');
+      console.log('Try again');
+    }
+  }
+
+  seventhQuestion();
+  console.log('sevent question called');
 
   alert('The correct answers were: red, green, blue, and purple');
   console.log('list of correct colors');
@@ -193,4 +200,6 @@ while (takeQuiz.toLowerCase() === 'yes') {
 
   alert('Final Score: ' + --scoreNumber);
   console.log('displays final score');
+
+  break;
 }
