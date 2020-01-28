@@ -16,7 +16,6 @@ var ready = prompt('Are you ready for the quiz?');
 
 function takeQuiz() {
 
-
   if (ready.toLowerCase() === 'yes') {
     alert('Lets do this');
   } else if (ready.toLowerCase() === 'no') {
@@ -30,29 +29,8 @@ takeQuiz();
 
 while ((ready === 'yes') || (ready != 'no')) {
 
-<<<<<<< HEAD
   function firstQuestion() {
     var firstQ = prompt('Is my name Lami Beach?');
-=======
-while (takeQuiz.toLowerCase() === 'yes') {
-  console.log('My code only runs when the person is ready');
-
-  function firstQ() {
-
-  var firstQuestion = prompt('Is my name Lami Beach?');
-
-  if (firstQuestion.toLowerCase() === 'yes') {
-    alert('Great job ' + welcomeMessage + ' That is my name!');
-    alert(scoreNumber++);
-    console.log('Great job ' + welcomeMessage + ' That is my name!');
-  } else if ('no') {
-    alert('Aww shucks, you don/t love me');
-    console.log('wrong answer');
-
-  } else {
-    alert('Something went wrong')
-    console.log('Something went wrong');
->>>>>>> f52547eaad6f55967911e5565be0e55af4763834
 
     if (firstQ.toLowerCase() === 'yes') {
       alert('Great job ' + message1 + ' That is my name!');
@@ -63,22 +41,11 @@ while (takeQuiz.toLowerCase() === 'yes') {
       alert('Something went wrong')
     }
   }
-  
-  }
-firstQ();
 
-<<<<<<< HEAD
+
+
   firstQuestion();
 
-=======
-function secondQ() {
-  var secondQuestion = prompt('Did I attend Arizona State University');
-
-  if (secondQuestion.toLowerCase() === 'yes') {
-    alert('You are on a roll!');
-    alert(scoreNumber++);
-    console.log('You are on a roll');
->>>>>>> f52547eaad6f55967911e5565be0e55af4763834
 
   function secondQuestion() {
     var secondQ = prompt('Did I attend Arizona State University');
@@ -92,16 +59,10 @@ function secondQ() {
       alert('Something went wrong');
     }
   }
-}
-secondQ();
 
-<<<<<<< HEAD
+
   secondQuestion();
 
-=======
-function thirdQ() {
-  var thirdQuestion = prompt('Was I an exotic Dancer?');
->>>>>>> f52547eaad6f55967911e5565be0e55af4763834
 
 
   function thirdQuestion() {
@@ -116,16 +77,10 @@ function thirdQ() {
       alert('Something went wrong');
     }
   }
-}
-thirdQ();
 
-<<<<<<< HEAD
+
   thirdQuestion();
 
-=======
-function fourthQ() {
-  var fourthQuestion = prompt('Have I sold a screenplay yet?');
->>>>>>> f52547eaad6f55967911e5565be0e55af4763834
 
 
   function fourthQuestion() {
@@ -141,21 +96,10 @@ function fourthQ() {
 
     }
   }
-}
-fourthQ();
 
-<<<<<<< HEAD
+
   fourthQuestion();
 
-=======
-function fifthQ() {
-  var fifthQuestion = prompt('Do I like to party?');
-
-  if (fifthQuestion.toLowerCase() === 'yes') {
-    alert('Yes, ' + welcomeMessage + ' lets party!')
-    alert(scoreNumber++);
-    console.log('Yes, ' + welcomeMessage + ' lets party!');
->>>>>>> f52547eaad6f55967911e5565be0e55af4763834
 
   function fifthQuestion() {
     var fifthQ = prompt('Do I like to party?');
@@ -170,17 +114,11 @@ function fifthQ() {
 
     }
   }
-}
-fifthQ();
 
-<<<<<<< HEAD
+
   fifthQuestion();
 
 
-=======
-function sixthQ() {
-  for (var i = 0; i < 4; i++) {
->>>>>>> f52547eaad6f55967911e5565be0e55af4763834
 
   function sixthQuestion() {
 
@@ -206,21 +144,10 @@ function sixthQ() {
     }
   }
 
-<<<<<<< HEAD
   sixthQuestion();
-=======
-  if (sixthQuestion != 9) {
-    alert('The answer is 9!');
-  }
-}
-sixthQ();
-
-function seventhQ() {
->>>>>>> f52547eaad6f55967911e5565be0e55af4763834
 
 
 
-<<<<<<< HEAD
   function seventhQuestion() {
 
     for (var a = 0; a < 6; a++) {
@@ -239,31 +166,11 @@ function seventhQ() {
   }
 
   seventhQuestion();
-=======
-    if (seventhQuestion.toLowerCase() === colors[0] || seventhQuestion.toLowerCase() ===  colors[1] || seventhQuestion.toLowerCase() === colors[2] || seventhQuestion.toLowerCase() ===  colors[3]) {
-      alert('Yes, that is my favorite');
-      alert(scoreNumber++);
-      console.log('correct answer');
-      break;
-    }  else (seventhQuestion.toLowerCase() != colors)
-    alert('Try again'); 
-    console.log('Try again');
-  }
-}
-seventhQ();
-
->>>>>>> f52547eaad6f55967911e5565be0e55af4763834
 
   alert('The correct answers were: red, green, blue, and purple');
 
 
   alert('Final Score: ' + --scoreNumber);
-<<<<<<< HEAD
 
   break;
 }
-=======
-  console.log('displays final score');
-  break;
-}
->>>>>>> f52547eaad6f55967911e5565be0e55af4763834
